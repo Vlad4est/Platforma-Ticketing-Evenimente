@@ -1,7 +1,7 @@
 # Platforma de Ticketing Evenimente
 
 ## Descriere generala
-Aplicatia este o platforma de ticketing pentru evenimente, accesibila fie ca aplicatie web, fie ca aplicatie mobila. Scopul principal al aplicatiei este sa faciliteze gestionarea evenimentelor si participarea la acestea, oferind o interfata prietenoasa atat pentru organizatorii de evenimente, cat si pentru utilizatorii obisnuiti. Prin aceasta aplicatie, organizatorii de evenimente pot crea si administra evenimente, iar utilizatorii interesati pot cauta si solicita invitatii pentru a participa.
+Aplicatia este o platforma de ticketing pentru evenimente accesibila ca aplicatie web (si/sau ca aplicatie mobila). Scopul principal al aplicatiei este sa faciliteze gestionarea evenimentelor si participarea la acestea, oferind o interfata prietenoasa atat pentru organizatorii de evenimente, cat si pentru utilizatorii obisnuiti. Prin aceasta aplicatie, organizatorii de evenimente pot crea si administra evenimente, iar utilizatorii interesati pot cauta si solicita invitatii pentru a participa.
 
 ## Moduri de utilizare
 Aplicatia va permite utilizatorilor sa:
@@ -10,7 +10,7 @@ Aplicatia va permite utilizatorilor sa:
 3. **Exploreze evenimente** – utilizatorii obisnuiti pot cauta evenimente in functie de interesele lor sau locatia lor.
 4. **Solicite invitatii** – utilizatorii pot cere invitatii pentru evenimentele de interes.
 5. **Acceseze invitatii** – invitatiile vor fi trimise pe email si vor include un cod QR semnat criptografic pentru validare la intrare.
-6. **Vizualizeze statistici** – organizatorii de evenimente pot analiza statistici despre participare si vizibilitate.
+6. **Valideze invitatii** –  organizatorii de evenimente vor putea valida invitatiile participantilor prin scanarea codurilor QR smenate criptografic.
 
 ## Tipuri de utilizatori
 1. **Organizator de evenimente** – Utilizatorii din aceasta categorie au acces la functii speciale:
