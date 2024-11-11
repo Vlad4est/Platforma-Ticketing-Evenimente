@@ -35,7 +35,7 @@ Aplicatia va permite utilizatorilor sa:
 
 5. **Sistem de validare** – Aplicatia va include un sistem de validare a invitatiilor prin scanarea codurilor QR criptografic semnate, oferind o metoda sigura si rapida de confirmare a identitatii participantilor.
 
-## Tehnologii recomandate
+## Tehnologii
 1. **Backend**: Node.js, pentru logica de server si procesele legate de gestionarea evenimentelor si securizarea datelor.
 2. **Frontend**: Angular pentru aplicatia web, asigurand o interfata moderna si usor de utilizat. Angular permite dezvoltarea unui frontend performant, cu functionalitati avansate si o experienta de utilizare fluida.
 3. **Baza de date**: MongoDB pentru gestionarea flexibila a datelor legate de utilizatori si evenimente.
