@@ -33,13 +33,13 @@ Aplicatia va permite utilizatorilor sa:
 
 4. **Vizualizarea statisticilor** – Organizatorii pot accesa statistici pentru fiecare eveniment, pentru a evalua succesul si interesul generat in randul participantilor.
 
-5. **Sistem de notificari** – Aplicatia va include notificari prin email sau push pentru a reaminti utilizatorilor despre evenimentele viitoare sau pentru a confirma rezervarea locurilor.
+5. **Sistem de validare** – Aplicatia va include un sistem de validare a invitatiilor prin scanarea codurilor QR criptografic semnate, oferind o metoda sigura si rapida de confirmare a identitatii participantilor.
 
 ## Tehnologii recomandate
 1. **Backend**: Node.js, pentru logica de server si procesele legate de gestionarea evenimentelor si securizarea datelor.
-2. **Frontend**: Angular pentru aplicatia web sau React Native pentru aplicatia mobila, oferind o experienta fluida pentru utilizatori.
-3. **Baza de date**: MongoDB pentru gestionarea flexibila a datelor legate de utilizatori si evenimente, sau PostgreSQL pentru nevoile de stocare relationala.
-4. **Securitate**: Semnarea criptografica a codurilor QR, pentru a oferi siguranta si autenticitate invitatiilor.
+2. **Frontend**: Angular pentru aplicatia web, asigurand o interfata moderna si usor de utilizat. Angular permite dezvoltarea unui frontend performant, cu functionalitati avansate si o experienta de utilizare fluida.
+3. **Baza de date**: MongoDB pentru gestionarea flexibila a datelor legate de utilizatori si evenimente.
+4. **Securitate**: Semnarea criptografica a codurilor QR, pentru a oferi siguranta si autenticitate invitatiilor (diferite librarii valabile prin npm).
 
 ## Concluzie
 Aplicatia de ticketing pentru evenimente va permite organizatorilor sa gestioneze mai eficient evenimentele lor si sa ajunga la un public larg, in timp ce utilizatorii obisnuiti vor putea descoperi si participa la evenimentele de interes. Prin utilizarea tehnologiilor recomandate, platforma va oferi performanta, siguranta si o experienta placuta pentru ambele tipuri de utilizatori.
