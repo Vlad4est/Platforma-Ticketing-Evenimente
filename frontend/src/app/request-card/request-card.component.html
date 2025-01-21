@@ -1,0 +1,32 @@
+<div class="request-card">
+  <div class="request-card__content">
+    <div class="request-card__user">
+      <i class="fas fa-user request-card__avatar"></i>
+      <span class="request-card__username">{{ request.username }}</span>
+    </div>
+    
+    <div class="request-card__event-info">
+      <h3 class="request-card__event-title">{{ request.event.title }}</h3>
+      <p class="request-card__event-date">
+        {{ request.event.dateTime | date }}
+      </p>
+    </div>
+  </div>
+
+  <div class="request-card__actions">
+    <button 
+      class="request-card__btn request-card__btn--accept"
+      (click)="onAccept()"
+      title="Accept Request"
+    >
+      <i class="fas fa-check"></i>
+    </button>
+    <button 
+      class="request-card__btn request-card__btn--decline"
+      (click)="onDecline()"
+      title="Decline Request"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.form-container {
+  background-color: white;
+  padding: 3rem; // Increased padding
+  border-radius: 12px; // Slightly increased border radius
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); // Enhanced shadow for more prominence
+  width: 100%;
+  max-width: 600px; // Increased max-width
+  margin-top: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 2rem; // Increased bottom margin
+  font-size: 2.2rem; // Increased font size
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1.5rem; // Increased top margin
+  font-weight: bold;
+  color: #555;
+  font-size: 1.1rem; // Slightly increased font size
+}
+
+input, textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem; // Increased padding
+  border: 1px solid #ddd;
+  border-radius: 6px; // Slightly increased border radius
+  font-size: 1.1rem; // Increased font size
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px; // Increased minimum height
+}
+
+button {
+  margin-top: 2rem; // Increased top margin
+  padding: 0.75rem 1.5rem; // Increased padding
+  background-color: #e2231a;
+  color: white;
+  border: none;
+  border-radius: 6px; // Slightly increased border radius
+  font-size: 1.2rem; // Increased font size
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c41c14;
+  }
+}

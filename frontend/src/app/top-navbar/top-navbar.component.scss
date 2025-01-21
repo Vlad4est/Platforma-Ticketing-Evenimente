@@ -1,0 +1,54 @@
+$red: #9ce219;
+
+header {
+  background-color: $red;
+  height: 50px;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 18px;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+  gap: 16px;
+  align-items: center;
+}
+
+.profile div {
+  display: inline;
+}
+
+.avatar {
+  display: inline;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid #fefefe;
+  color: #fefefe;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #fefefe;
+    color: $red;
+  }
+}

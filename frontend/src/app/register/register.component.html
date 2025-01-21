@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="login-card">
+        <form [formGroup]="registerForm" (ngSubmit)="register()">
+            <h1>Register</h1>
+            <div class="subtitle">Register for new account</div>
+            <input type="text" placeholder="Username" formControlName="username">
+            <input type="password" placeholder="Password" formControlName="password">
+            <input type="text" placeholder="Email" formControlName="email">
+            <div class="checkbox-container">
+                <input type="checkbox" id="isOrganizer" formControlName="isOrganizer">
+                <label for="isOrganizer">Register as an organizer</label>
+            </div>
+            <button type="submit" class="sign-in-btn">Sign up</button>
+        </form>
+        <div class="login-redirect">
+            Already have an account? <a [routerLink]="'/login'">Log in</a>
+        </div>
+    </div>
+</div>

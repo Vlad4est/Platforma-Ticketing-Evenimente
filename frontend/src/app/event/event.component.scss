@@ -1,0 +1,90 @@
+.event-card {
+    $self: &;
+    
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: white;
+    
+    &__header {
+      margin-bottom: 1rem;
+    }
+    
+    &__title {
+      margin: 0;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    
+    &__datetime {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+    }
+    
+    &__body {
+      margin-bottom: 1rem;
+    }
+    
+    &__description {
+      color: #444;
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+    }
+    
+    &__location {
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      
+      i {
+        color: #2196f3;
+      }
+    }
+    
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    &__button {
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      
+      &:hover:not(:disabled) {
+        background-color: #1976d2;
+        transform: translateY(-1px);
+      }
+      
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+      
+      &--requested {
+        background-color: #4caf50;
+        
+        &:hover {
+          background-color: #4caf50;
+        }
+      }
+    }
+    
+    @media (max-width: 768px) {
+      max-width: 100%;
+      
+      &__title {
+        font-size: 1.25rem;
+      }
+    }
+  }

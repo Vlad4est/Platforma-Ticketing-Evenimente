@@ -1,0 +1,26 @@
+<div class="post">
+    <div class="post-header">
+      <div class="post-header-profile">
+        <img class="avatar" [src]="userAvatarUrl" />
+        <div class="post-user-details">
+          <div class="post-username">{{ event.author || "Anonymous"}}</div>
+          <div class="post-date-created">{{ event.createdAt | date }}</div>
+        </div>
+      </div>
+      <button class="following-btn basic-btn">Following</button>
+      <!-- <button class="follow-btn basic-btn">Follow</button> -->
+    </div>
+    <div class="post-body">
+      <h3>{{ event.title }}</h3>
+      <img [src]="imageURL" />
+      <div>
+       {{ event.description }}
+      </div>
+    </div>
+    <div class="post-footer">
+      <button class="like-btn basic-btn" [class.liked]="isLiked" (click)="likePost()">
+        <i [class]="isLiked ? 'fas fa-heart' : 'far fa-heart'"></i>
+        {{ isLiked ? 'Liked' : 'Like' }}
+      </button>
+    <span class="like-counter">{{ likeCount }}</span></div>
+  </div>
