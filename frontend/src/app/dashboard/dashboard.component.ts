@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AppService } from '../app.service';
 import { Router } from '@angular/router';
+import { CustomRequest } from '../models/models';
 
 @Component({
   selector: 'app-dashboard',
@@ -22,6 +23,19 @@ export class DashboardComponent {
         
         
       });
-      
     }
+    loadRequests() {
+      this.appService.getRequestsByOrganizerId().subscribe((response: any) => {
+        console.log(response);
+        this.requests = response;
+      });
+    }
+
+    onRequestProcessed(processedRequest: CustomRequest) {
+      this.requests = this.requests.filter((req: CustomRequest) => 
+        req.event.id !== processedRequest.event.id || 
+        req.username !== processedRequest.username
+      );
+    }
+
 }

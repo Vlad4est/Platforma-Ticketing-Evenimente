@@ -29,6 +29,7 @@ const EventSchema = new mongoose.Schema(
             required: false,
         },
         pendingInvitations: [],
+        declinedInvitations: [],
         participants: []
     },
     {

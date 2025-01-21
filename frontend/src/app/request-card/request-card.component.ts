@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AppService } from '../app.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { AppService } from '../app.service';
 })
 export class RequestCardComponent {
   @Input() request!: any;
-
+  @Output() requestProcessed = new EventEmitter<any>();
   constructor(private appService: AppService) {}
 
  
@@ -17,6 +17,7 @@ export class RequestCardComponent {
     this.appService.acceptRequest(this.request.event.id, this.request.username).subscribe(
       (response) => {
         console.log('POST response:', response);
+        this.requestProcessed.emit(this.request);
       },
       (error) => {
         console.log('POST error:', error);
@@ -28,6 +29,7 @@ export class RequestCardComponent {
     this.appService.declineRequest(this.request.event.id, this.request.username).subscribe(
       (response) => {
         console.log('POST response:', response);
+        this.requestProcessed.emit(this.request);
       },
       (error) => {
         console.log('POST error:', error);

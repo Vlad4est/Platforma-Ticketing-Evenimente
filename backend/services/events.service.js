@@ -48,7 +48,6 @@ const eventService = {
       console.log("test-1")
       await EventModel.updateOne({ id: eventId }, {$push:  {participants: username} });
       await EventModel.updateOne({ id: eventId }, {$pull:  {pendingInvitations: username} });
-      await userService.updateEventList(user.id, eventId);
       console.log("test-2")
       return await mailService.sendAcceptMail(username, eventId);
     }
@@ -63,7 +62,7 @@ const eventService = {
     const user = await userService.getUser(username);
     if(organizer.isOrganizer && event.pendingInvitations.includes(username) && event.organizerId === organizerId){
       await EventModel.updateOne({ id: eventId }, {$pull:  {pendingInvitations: username} });
-      await userService.updateEventList(user.id, eventId);
+      await EventModel.updateOne({ id: eventId }, {$push:  {declinedInvitations: username} });
       await mailService.sendDeclineMail(username, eventId);
     }
     

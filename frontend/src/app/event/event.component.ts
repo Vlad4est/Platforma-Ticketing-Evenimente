@@ -14,7 +14,8 @@ export class EventComponent implements OnInit{
     
   }
   ngOnInit(): void {
-    if(this.event.pendingInvitations.includes(this.username)) {
+    if(this.event.pendingInvitations.includes(this.username) || this.event.declinedInvitations.includes(this.username)
+       || this.event.participants.includes(this.username)) {
       this.requestSent = true;
     }
   }
